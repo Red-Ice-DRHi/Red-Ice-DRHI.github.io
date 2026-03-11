@@ -10,14 +10,14 @@
   <rights>All rights reserved 2026, redice</rights>
   <subtitle>你好你好</subtitle>
   <title>redice的随手记</title>
-  <updated>2026-03-11T15:42:49.657Z</updated>
+  <updated>2026-03-11T16:36:24.742Z</updated>
   <entry>
     <author>
       <name>redice</name>
     </author>
     <category term="数学" scheme="http://red-ice-drhi.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     <content>
-      <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p><span id="more"></span><h3 id="齐次传输方程"><a href="#齐次传输方程" class="headerlink" title="齐次传输方程"></a>齐次传输方程</h3><p>$$<br>u_{t}+\mathbf{b}\cdot\mathbf{D}u&#x3D;0 \<br>u:\mathbb{R}^n\times[0,\infty)\rightarrow\mathbb{R}为待解对象<br>$$</p><p>其中：</p><p>$$<br> u_{t}&#x3D;\frac{\partial u}{\partial t} \<br> \mathbf{D}u&#x3D;\mathbf{D}<em>{x}u&#x3D;(u</em>{x_{1}}u_{x_{2}},u_{x_{3}}…u_{x_{n}})\<br>$$</p>]]>
+      <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p><span id="more"></span><h3 id="齐次传输方程">齐次传输方程</h3><p><span class="math display">$$u_{t}+\mathbf{b}\cdot\mathbf{D}u=0   \\u:\mathbb{R}^n\times[0,\infty)\rightarrow\mathbb{R}为待解对象$$</span></p><p>其中: <span class="math display">$$u_{t}=\frac{\partial u}{\partial t} \\\mathbf{D}u=\mathbf{D}_{x}u=(u_{x_{1}}u_{x_{2}},u_{x_{3}}...u_{x_{n}})$$</span></p><p>可以从原方程看出来</p><p>u在（1，<strong>b</strong>）方向上的偏导数为0，即 <spanclass="math display">$$\frac{\partial u}{\partial (1,\mathbf{b})}\equiv0$$</span> 或者说 <span class="math display">$$\\(1,\mathbf{b}) \cdot \nabla u=u_{t}+\mathbf{b} \cdot \mathbf{D}u=0$$</span></p>]]>
     </content>
     <id>http://red-ice-drhi.github.io/2026/03/11/partial-differential-equations/</id>
     <link href="http://red-ice-drhi.github.io/2026/03/11/partial-differential-equations/"/>
@@ -26,7 +26,7 @@
       <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p>]]>
     </summary>
     <title>偏微分方程</title>
-    <updated>2026-03-11T15:42:49.657Z</updated>
+    <updated>2026-03-11T16:36:24.742Z</updated>
   </entry>
   <entry>
     <author>
