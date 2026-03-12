@@ -10,14 +10,14 @@
   <rights>All rights reserved 2026, redice</rights>
   <subtitle>你好你好</subtitle>
   <title>redice的随手记</title>
-  <updated>2026-03-11T16:36:24.742Z</updated>
+  <updated>2026-03-12T14:01:39.646Z</updated>
   <entry>
     <author>
       <name>redice</name>
     </author>
     <category term="数学" scheme="http://red-ice-drhi.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     <content>
-      <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p><span id="more"></span><h3 id="齐次传输方程">齐次传输方程</h3><p><span class="math display">$$u_{t}+\mathbf{b}\cdot\mathbf{D}u=0   \\u:\mathbb{R}^n\times[0,\infty)\rightarrow\mathbb{R}为待解对象$$</span></p><p>其中: <span class="math display">$$u_{t}=\frac{\partial u}{\partial t} \\\mathbf{D}u=\mathbf{D}_{x}u=(u_{x_{1}}u_{x_{2}},u_{x_{3}}...u_{x_{n}})$$</span></p><p>可以从原方程看出来</p><p>u在（1，<strong>b</strong>）方向上的偏导数为0，即 <spanclass="math display">$$\frac{\partial u}{\partial (1,\mathbf{b})}\equiv0$$</span> 或者说 <span class="math display">$$\\(1,\mathbf{b}) \cdot \nabla u=u_{t}+\mathbf{b} \cdot \mathbf{D}u=0$$</span></p>]]>
+      <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p><span id="more"></span><h3 id="齐次传输方程">齐次传输方程</h3><p><span class="math display">$$u_{t}+\mathbf{b}\cdot\mathbf{D}u=0   \\u:\mathbb{R}^n\times[0,\infty)\rightarrow\mathbb{R}为待解对象$$</span></p><p>其中: <span class="math display">$$u_{t}=\frac{\partial u}{\partial t} \\\mathbf{D}u  =\mathbf{D}_{\mathbfx}u=(u_{x_{1}}u_{x_{2}},u_{x_{3}}...u_{x_{n}})$$</span></p><p>可以从原方程看出来</p><p>u在（1，<strong>b</strong>）方向上的偏导数为0，即 <spanclass="math display">$$\frac{\partial u}{\partial (1,\mathbf{b})}\equiv0$$</span> 或者说 <span class="math display">$$\\(1,\mathbf{b}) \cdot \nabla u \equiv u_t+\mathbf b \cdot \mathbf{D}u\equiv 0$$</span></p><p><span class="math display">$$\\$$</span></p><p><span class="math display">$$令z(s)=u(\mathbf{x}+s\mathbf{b},t+s)\quad s\in \mathbb{R} \\其中\mathbf{x},\mathbf{b},t是常量参数\\\frac{dz}{ds}=\frac{\partial z}{\partial (\mathbf{x}+s\mathbf{b})}\frac{d(\mathbf{x}+s\mathbf{b})}{ds}+\frac{\partial z}{\partial (t+s)} \\  =\mathbf{D}_{\mathbf{x}}u(\mathbf{x}+s\mathbf{b},t+s) \cdot \mathbf{b} +\mathbf{D}_{t}u(\mathbf{x}+s\mathbf{b},t+s) \\=(1,\mathbf{b}) \cdot \nabla u(\mathbf{x}+s\mathbf{b},t+s)=0 \\(最后一个等号来自于恒等式)$$</span> 到这已经挺明显了</p><p>若以u的值为高度轴，u的图像应该是无数条与(1,<strong>b</strong>,0)平行的直线组成的</p><p>不过这一堆直线拼接的方式是否连续或断裂就不清楚了</p><p>因为这个偏导为0和原方程是等价信息（可以互推）</p><p>现在我们考虑带初值的情况 <span class="math display">$$\begin{equation}    \begin{cases}        u_{t}+\mathbf{b}\cdot\mathbf{D}u=0, &amp;在\mathbb{R}^n\times(0,\infty)中 \\        u=g, &amp; 在\mathbb{R}^n\times\{t=0\}中    \end{cases}\end{equation}$$</span> 我们知道u(<strong>x</strong>+s<strong>b</strong>,t+s)对变化的s是定值 <spanclass="math display">$$u(\mathbf{x}+s\mathbf{b},t+s) \overset{s=-t}{=}u(\mathbf{x}-t\mathbf{b},0)=g(\mathbf{x}-t\mathbf{b}) \\u(\mathbf{x}+s\mathbf{b},t+s) \overset{s=0}{=} u(\mathbf{x},t)\overset{来自上一行}{===} g(\mathbf{x}-t\mathbf{b})$$</span> 不得不说好神奇这操作</p><p>添加了一个变量，最后消去</p><p>我们一直把<strong>x</strong>，t视为参数，现在如果把它视作自由变量<span class="math display">$$\\u(\mathbf{x},t) = g(\mathbf{x}-t\mathbf{b})\\$$</span> 就是我们想要的解了</p><p>也就是说这个解是否可显性表达，连不连续，光滑不光滑，都取决于初值函数g的性质</p><h3 id="非齐次传输方程">非齐次传输方程</h3><p><span class="math display">$$\begin{equation}    \begin{cases}        u_{t}+\mathbf{b}\cdot\mathbf{D}u=f, &amp;在\mathbb{R}^n\times(0,\infty)中 \\        u=g, &amp; 在\mathbb{R}^n\times\{t=0\}中    \end{cases}\end{equation}$$</span></p><p>我们如法炮制一下 <span class="math display">$$u_{t}+\mathbf{b}\cdot\mathbf{D}u=(1,\mathbf{b}) \cdot \nabla u=f \\\quad \\令z(s)=u(\mathbf{x}+s\mathbf{b},t+s)\quad s\in \mathbb{R} \\其中\mathbf{x},\mathbf{b},t是常量参数\\\frac{dz}{ds}=(1,\mathbf{b}) \cdot \nabla u(\mathbf{x}+s\mathbf{b},t+s)=f \\$$</span></p>]]>
     </content>
     <id>http://red-ice-drhi.github.io/2026/03/11/partial-differential-equations/</id>
     <link href="http://red-ice-drhi.github.io/2026/03/11/partial-differential-equations/"/>
@@ -26,7 +26,7 @@
       <![CDATA[<p>买了那本经典的偏微分方程的经典教材，读着试试</p>]]>
     </summary>
     <title>偏微分方程</title>
-    <updated>2026-03-11T16:36:24.742Z</updated>
+    <updated>2026-03-12T14:01:39.646Z</updated>
   </entry>
   <entry>
     <author>
